@@ -21,7 +21,7 @@ jobs:
 
 
     - name: Build Docker image
-      run: docker build -t reactjsapp
+      run: docker build -t reactjsapp .
 
 
     - name: Run the Container App
