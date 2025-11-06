@@ -20,9 +20,5 @@ jobs:
         node-version: 'latest'
 
 
-    - name: Build Docker image
-      run: docker build -t reactjsapp .
-
-
-    - name: Run the Container App
-      run: docker run -p 5173:5173 -v ${PWD}:/app -v /app/node_modules reactjsapp
+    - name: Run services
+      run: docker compose up
